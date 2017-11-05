@@ -1,0 +1,199 @@
+.row {
+    -webkit-flex-direction: row;  /* Safari */
+    flex-direction:  row;
+}
+.spinningNumber {
+    background:black url("../img/hills.jpg") no-repeat center;
+    background-size: 100%%;
+    padding: 198px  0px 235px  0px !important;
+    overflow: hidden;
+    transition: opacity .5s ease;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.spinningNumber-second {
+    background-image:none;
+    padding:  0px  0px 70px  0px !important;
+}
+html {
+    height: 100%
+}
+.people_icon_wrapper, .heart_icon_wrapper, .award_icon_wrapper, .photo_icon_wrapper{
+    position: relative;
+    padding: 35px 15px 0px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center ;
+    line-height: 10px;
+}
+.people_text, .heart_text, .award_text, .photo_text {
+    text-transform: uppercase;
+} 
+
+.stat_count {
+
+    margin-bottom: 7px;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 50px;
+    padding-top: 20px;
+}
+.people_text, .heart_text, .award_text, .photo_text {
+    letter-spacing: 2px;
+    font: 13px Poppins;
+    color: #ffffff;
+    line-height: 24px;
+    text-align: center;
+}
+@keyframes bounceInLeft {
+    0%,100%,60%,75%,90% {
+        -webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0% {
+        opacity:0;
+        -webkit-transform:translate3d(-3000px,0,0);
+        transform:translate3d(-3000px,0,0)
+    }
+    60% {
+        opacity:1;
+        -webkit-transform:translate3d(25px,0,0);
+        transform:translate3d(25px,0,0)
+    }
+    75% {
+        -webkit-transform:translate3d(-10px,0,0);
+        transform:translate3d(-10px,0,0)
+    }
+    90% {
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    100% {
+        -webkit-transform:none;
+        transform:none
+    }
+}
+.bounceInLeft.start{
+    position: relative;
+    padding:  0px 15px  0px 15px;
+    text-align: center;
+    animation-name: bounceInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 1;
+    
+}
+
+@-webkit-keyframes bounceIn {
+    0%,100%,20%,40%,60%,80% {
+        -webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0% {
+        opacity:0;
+        -webkit-transform:scale3d(.3,.3,.3);
+        transform:scale3d(.3,.3,.3)
+    }
+    20% {
+        -webkit-transform:scale3d(1.1,1.1,1.1);
+        transform:scale3d(1.1,1.1,1.1)
+    }
+    40% {
+        -webkit-transform:scale3d(.9,.9,.9);
+        transform:scale3d(.9,.9,.9)
+    }
+    60% {
+        opacity:1;
+        -webkit-transform:scale3d(1.03,1.03,1.03);
+        transform:scale3d(1.03,1.03,1.03)
+    }
+    80% {
+        -webkit-transform:scale3d(.97,.97,.97);
+        transform:scale3d(.97,.97,.97)
+    }
+    100% {
+        opacity:1;
+        -webkit-transform:scale3d(1,1,1);
+        transform:scale3d(1,1,1)
+    }
+}
+.bounceIn.start {
+    animation-name: bounceIn;
+    animation-duration: .75s;
+    animation-fill-mode: both;
+    opacity: 1;
+    padding:  0px 15px  0px 15px;
+    position: relative;
+    text-align: center;
+}
+
+@-webkit-keyframes bounceInRight {
+    0%,100%,60%,75%,90% {
+        -webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);
+        transition-timing-function:cubic-bezier(.215,.61,.355,1)
+    }
+    0% {
+        opacity:0;
+        -webkit-transform:translate3d(3000px,0,0);
+        transform:translate3d(3000px,0,0)
+    }
+    60% {
+        opacity:1;
+        -webkit-transform:translate3d(-25px,0,0);
+        transform:translate3d(-25px,0,0)
+    }
+    75% {
+        -webkit-transform:translate3d(10px,0,0);
+        transform:translate3d(10px,0,0)
+    }
+    90% {
+        -webkit-transform:translate3d(-5px,0,0);
+        transform:translate3d(-5px,0,0)
+    }
+    100% {
+        -webkit-transform:none;
+        transform:none
+    }
+}
+.bounceInRight.start{
+    position: relative;
+    text-align: center ;
+    padding: 0px 15px  0px 15px;
+    animation-name: bounceInRight;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 1;
+}
+
+@media only screen(min-width: 1100px) {
+    .spinningNumber {
+        background-size: auto 602px;
+    }
+}
+@media only screen and (min-width: 960px) and (max-width: 1099px) {
+    .spinningNumber {
+        background-size: auto 862px;
+    }
+}
+@media only screen and (max-width: 959px) and (min-width: 760px) {
+    .spinningNumber{
+        padding: 38px  0px 120px  0px!important;
+        background-size: cover!important;
+    }
+}
+@media only screen and (max-width: 759px) {
+    .spinningNumber{
+        padding: 38px  0px 120px  0px!important;
+        background-size: cover!important;
+    }
+}
+
+.runningicons {
+    width:50px;
+}

@@ -1,0 +1,146 @@
+.contacts_header h1 {
+    color: #000000;
+    background: linear-gradient(90deg, #fe243e 10%, #bb47fd 70%) no-repeat center;
+    background-size: 150% 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    line-height: 92px;        
+    text-transform: none;
+    font-weight: 700;
+    letter-spacing: 0; 
+    text-align: left;
+    font-size: 72px;
+    margin: 60px 0px;
+}   
+
+.contacts_para_wrap {
+    width: 35vw;
+    height: auto;
+    margin: 30px 0px 0px 0px;
+}
+
+.contacts_para {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: 'Lora', sans-serif;
+}
+
+.contacts_add_text {
+    font-family: 'Lora', sans-serif;
+    text-align: left;
+    margin-left: 18px;
+    float: left;
+    font-size: 15px;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+}
+
+.contacts_add {
+    margin-top: 40px;
+    width: 300px;
+    float: left;
+}
+
+.contacts_social {
+    font-size: 20px;
+    background: #232323;
+    width: 45px;
+    height: 45px;
+    background: rgba(62,63,70, 0.5);
+    color: #757579;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    padding-left:15px; 
+    padding-right:15px;
+}
+
+.contacts_social:hover {
+    color: #be243e;
+    background: #232323; 
+    text-decoration: none;
+}
+
+.contact_inputbox_wrap {
+    width: 100%;
+    margin-top: 50px
+}
+
+.contact_inputbox {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #212125;
+    height: 50px;
+    color: white;
+    font-family: 'Poppins',serif;
+    font: 24px;
+    border-color: #212125;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.contact_inputbox:focus {
+    outline: none;
+}
+
+.contacts_icons {
+    color: deeppink;
+    float: left;
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.contacts_form {
+    width: 470px;
+    margin: 250px 0px 50px 0px;
+    position: relative;
+}
+
+#map {
+    width: 95%;
+    height: 915px;
+    margin: 0px 5% 30px 0px;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1280px) {
+    #reSize{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .contacts_form {
+        width: 45vw;
+        margin: 250px 0px 50px 0px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 646px) {
+    #reSize {
+        width: 80%;
+        margin-bottom: 60px;
+    }
+    .contacts_form {
+        width: auto;
+        margin: 250px 0px 50px 0px;
+        position: relative;
+    }
+    #map {
+        width: 100%;
+        height: 100vw;
+        margin: 0px 0px 30px 0px;
+    }
+    .contacts_header h1 {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contacts_para_wrap {
+        width: auto;
+    }
+}

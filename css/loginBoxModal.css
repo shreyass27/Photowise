@@ -1,0 +1,267 @@
+/* Login Using Social Sites Wrapper */
+.preview_share_toggler {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 45px;
+    background: #393939;
+    color: #DDDDDD;
+}
+
+.preview_share_toggler span:before {
+    font-size: 14px;
+}
+
+.preview_share_wrapper {
+    position: relative;
+    width: 45px;
+    transition: width 400ms;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.preview_share_block {
+    width: 220px;
+    height: 45px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 400ms;
+    visibility: hidden;
+    background-color: black;
+}
+
+.preview_share_block:hover {
+    width: 220px;
+    opacity: 1;
+}
+
+.preview_share_wrapper:hover .preview_share_block {
+    visibility: visible;
+}
+
+.preview_share_block a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 165px;
+    top: 0;
+    text-align: center;
+    margin-left: 10px;
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: background 400ms, transform 400ms, left 400ms, opacity 400ms;
+    display: inline-grid;
+}
+
+.preview_share_block a i {
+    color: #ffffff;
+}
+
+.preview_share_block a i {
+    font-size: 14px;
+    line-height: 45px;
+}
+
+.preview_share_block:hover a {
+    transform: rotate(0deg);
+}
+
+.preview_share_block a.share_facebook {
+    background: #435c93;
+}
+
+.preview_share_block a.share_twitter {
+    background: #6bace8;
+}
+
+.preview_share_block a.share_gplus {
+    background: #b05140;
+}
+
+.preview_share_block a.share_pinterest {
+    background: #bb3330;
+}
+
+.preview_share_block:hover a.share_facebook {
+    left: 0px;
+    opacity: 1;
+}
+
+.preview_share_block:hover a.share_twitter {
+    left: 55px;
+    opacity: 1;
+}
+
+.preview_share_block:hover a.share_gplus {
+    left: 110px;
+    opacity: 1;
+}
+
+.preview_share_block:hover a.share_pinterest {
+    left: 165px;
+    opacity: 1;
+}
+
+.preview_share_block a.share_facebook:hover {
+    background: #5d7dc5;
+}
+
+.preview_share_block a.share_twitter:hover {
+    background: #91cafe;
+}
+
+.preview_share_block a.share_gplus:hover {
+    background: #e4644d;
+}
+
+.preview_share_block a.share_pinterest:hover {
+    background: #ea413d;
+}
+
+.blog_post_preview.no_image .preview_content .preview_share_toggler,
+.blog_post_preview.no_image .preview_content .post_likes i {
+    background: #2d2d32;
+}
+
+.modal-header {
+    padding: 15px;  
+    border: none;
+}      
+
+.login_modal_footer{
+    margin-top:5px;
+}
+
+.modal-title {
+    text-align: center;
+    font-family:'Lora', serif; 
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(90deg, #fe243e 0%, #bb47fd) no-repeat center;
+    background-size: 150% 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group .login-field-icon {
+    font-size: 20px;
+    position: absolute; 
+    right: 15px;
+    top: 3px;
+    transition: all 0.25s ease 0s;
+    padding-top: 2%;
+    color: #757579;
+}
+
+.login-modal {
+    width:100%;
+    padding-bottom:20px;
+}
+
+.login_modal_header, .login_modal_footer {
+    background: #000000;
+    color:#fff;
+}
+
+.modal-register-btn {
+    margin: 4% 33% 2% 33%;
+    width: 100%;
+}
+
+.login-modal input {
+    height: 40px; 
+    box-shadow: none; 
+    margin-top: 18px;
+    margin-left: 15px;
+    height: 40px;
+    border-radius: 200px;
+    background: #393939;
+    box-shadow: none;
+    border: 1px solid #545454;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.modal-body-left {
+    float: left; 
+    width: 99%; 
+    padding-right: 4%; 
+}
+
+.login-link {
+    padding: 0 0%;
+    color: white;
+    background: linear-gradient(90deg, #fe243e 0%, #bb47fd) no-repeat center;
+    background-size: 150% 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.modal-social-icons {
+    padding: 0 10%;
+}
+
+.modal-icons{
+    margin-left: -10px; 
+    margin-right: 20px;
+}
+
+.modal-footer{
+    border: none;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+    color: aliceblue;
+}
+
+
+#modal-launcher {
+    margin: 0 0 0 0;
+}
+
+.loginNewUser {
+    color:white;  
+    background: linear-gradient(90deg, #fe243e 0%, #bb47fd) no-repeat center;
+    background-size: 150% 150%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left; 
+    font-size: 15px;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+.videoModal {
+    background-color: rgba(0,0,0,0);
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media only screen and (max-width: 770px)  {
+    .videoModal{
+        width:100%;
+        margin: 0px;
+    } 
+}

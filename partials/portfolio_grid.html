@@ -1,0 +1,111 @@
+<div class="container" id="responsiveWrap">
+	<div style="height:50px;"></div>    
+	<div class="portfolio_page_title_block">
+		<h1 class="portfolio_page_title">Portfolio 3 Columns Grid</h1>    
+	</div>
+  
+	<div class="div-words" style="padding-bottom : 50px;">
+
+    <ul class="portfolio_category-list" >
+
+        <li class="portfolio_category-list-elements">
+					<a ng-click="categories('All')" >all</a>
+				</li>
+
+        <li class="portfolio_category-list-elements">
+					<a ng-click="categories('Fashion')" title="View all post filed under fashion ">fashion</a>
+				</li> 
+
+        <li class="portfolio_category-list-elements">
+					<a ng-click="categories('Landscape')" title="View all post filed under landscape ">landscape</a>
+				</li> 
+
+        <li class="portfolio_category-list-elements">
+					<a ng-click="categories('Nature')" title="View all post filed under nature ">nature</a>
+				</li>
+
+       </ul>
+	</div>
+ 
+<!--	Calling Image Array and Displaying Based on Index Value -->
+<!--  Filtering Categories Based On the selected category -->
+	<div ng-repeat="image in imgArray"  ng-if="$index % 3 == 0" class="row" style="margin-left:auto;margin-right:auto;">
+    
+		<div class="col-lg-4 col-md-4 col-sm-4 portfolio_img-wrapper uk-animation-scale-up">
+			<a ui-sref="search({searchText :imgArray[$index].imgCategory})"> 
+				<div class="portfolio-item-outer">    
+				<div class="portfolio_overlay"></div>
+					<div class="div_portfolio_img">
+						<img class=" portfolio_img img-responsive" ng-src="{{imgArray[$index].sourceAdd}}" />
+					</div>
+					<div class="portfolio_desc">
+						<h3><span class="portfolio_title" >{{imgArray[$index].imgTitle}}</span></h3>
+						<div class="portfolio_category">
+							<span class="portfolio_cat" >{{imgArray[$index].imgCategory}}</span>
+						</div>
+						<div class="div_post_likes">
+							<i class="fa fa-heart-o"></i>
+							<span class="portfolio_likes_text">6 likes</span>
+						</div>    
+    			</div>
+				</div> 
+			</a> 
+		</div> 
+    
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio_img-wrapper uk-animation-scale-up">    
+			<a ui-sref="search({searchText :imgArray[$index+1].imgCategory})">
+    		<div class="portfolio-item-outer">
+    			<div class="portfolio_overlay"></div>
+    				<div class="div_portfolio_img">
+    					<img class=" portfolio_img img-responsive" ng-src="{{imgArray[$index+1].sourceAdd}}" />
+    				</div>
+    				<div class="portfolio_desc">
+    					<h3><span class="portfolio_title" >{{imgArray[$index+1].imgTitle}}</span></h3>
+    				<div class="portfolio_category">
+    					<span class="portfolio_cat">{{imgArray[$index+1].imgCategory}}</span>
+						</div>
+						<div class="div_post_likes">
+							<i class="fa fa-heart-o"></i>
+							<span class="portfolio_likes_text">6 likes</span>
+						</div>    
+					</div>
+				</div> 
+			</a>
+		</div>
+     
+     
+ 
+    
+    
+    <div class="col-lg-4 col-md-4 col-sm-4 portfolio_img-wrapper uk-animation-scale-up">   
+			<a ui-sref="search({searchText :imgArray[$index+2].imgCategory})">
+    		<div class="portfolio-item-outer" >
+					<div class="portfolio_overlay"></div>
+					<div class="div_portfolio_img">
+						<img class=" portfolio_img img-responsive" ng-src="{{imgArray[$index+2].sourceAdd}}" />
+					</div>
+					<div class="portfolio_desc">
+						<h3><span class="portfolio_title">{{imgArray[$index+2].imgTitle}}</span></h3>
+						<div class="portfolio_category">
+							<span class="portfolio_cat">{{imgArray[$index+2].imgCategory}}</span>
+						</div>
+						<div class="div_post_likes">
+							<i class="fa fa-heart-o"></i>
+							<span class="portfolio_likes_text">6 likes</span>
+						</div>    
+					</div>
+				</div> 
+			</a>
+		</div>      
+		
+ </div>
+    
+    
+  <div class="text-center {{ classAway }}" style="padding:50px 0px 50px 0px;">
+  	<a ng-click="LoadMore()" class="btn-gradient-primary a-button btn btn-secondary" >LOAD MORE <img src="img/right_arrow.png" height="13px" width="23px"> 
+		</a>
+	</div>
+        
+</div>
+	<div class="pre-footer"><pre-footer></pre-footer></div>
+<script src="js/startAtTop.js"></script>

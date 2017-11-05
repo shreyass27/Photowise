@@ -1,0 +1,54 @@
+<div class="loader" ng-show="loading"></div>
+	<div class="gridGalleryWrapper">
+		<div class="gridGallery">
+			<div class="container containerWrapper">
+				<div ng-repeat="picture in imgSrc track by $index"  ng-if="$index % 3 == 0" class="row gridRow">
+
+					<a ng-click="openmyModal();currentSlide($index+1)" class="center-block col-lg-4 col-md-4 col-sm-12  imgContainer" data-toggle="tooltip" data-placement="top" title="{{imgSrc[$index].imgTitle}}">
+						<img class="img-responsive gridImg" ng-src="{{imgSrc[$index].sourceAdd}}" />
+					</a>
+	
+					<a ng-click="openmyModal();currentSlide($index+2)" class="center-block col-lg-4 col-md-4 col-sm-12 imgContainer" data-toggle="tooltip" data-placement="top" title="{{imgSrc[$index+1].imgTitle}}">
+						<img class=" img-responsive gridImg" ng-src="{{imgSrc[$index + 1].sourceAdd}}" />
+
+					</a>
+	
+					<a ng-click="openmyModal();currentSlide($index+3)" class="center-block col-lg-4 col-md-4 col-sm-12 imgContainer" data-toggle="tooltip" data-placement="top" title="{{imgSrc[$index+2].imgTitle}}">
+        		<img class=" img-responsive gridImg" ng-src="{{imgSrc[$index + 2].sourceAdd}}" />
+					</a>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div id="myModal" class="myModal">
+			<span class="close cursor" ng-click="closemyModal()">&times;</span>
+				<div class="myModal-content">
+					<div ng-repeat="picture in imgSrc track by $index" class="mySlides demo" id="play">
+						<img ng-src="{{imgSrc[$index].sourceAdd}}" class="imageCarousel">
+						<div class="imageCarouselTextLeft" ng-bind="imgSrc[$index].imgTitle"></div>
+						<div class="imageCarouselTextRight"> <span ng-bind="$index+1"></span> / 9</div>
+				</div>
+				<a class="prev" style="left:05%" ng-click="plusSlides(-1)">&#10094;</a>
+        <a class="next" ng-click="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+			
+
+
+
+
+<div class="text-center">
+	<button ng-click="prevItems()" ng-disabled="pageNumber<=1" class="btn-gradient-primary prevBtn">
+		<img src="img/left_arrow.png" class="btn-arrow"> PREV
+	</button>
+	<button ng-click="nextItems()"  ng-disabled="checked" class="btn-gradient-secondary nextBtn">
+		NEXT <img src="img/right_arrow.png" class="btn-arrow">
+	</button>
+</div>
+
+<div class="pre-footer"><pre-footer></pre-footer></div>
+
+
+<script src="js/startAtTop.js"></script>

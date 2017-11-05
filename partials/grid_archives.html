@@ -1,0 +1,65 @@
+ <div>
+  <div class="text-center">
+		<div class="grid_arch_main_header">
+			<h1>Grid Archives</h1>    
+    
+  		<span class="grid_arch_quote">LOOK AT THE WORLD DIFFERENTLY</span>    
+				<div class="grid_arch_para">     
+				I'm Bradley Smith, I create cool things and I want to share them with you. Photography remains one of my biggest passions ever since. I'm a photography adict, specializing in head shots, nature, architecture and animal photo. See my amazing photography works.
+				</div>
+ 		</div>
+  </div>
+		<div class="text-center">
+    		<ul class="grid_arch_category_list" id="responsiveWrap">
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab" ng-click="categories('all')">All</a>
+					</li>
+
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab"  ng-click="categories('animals')">Animals</a>
+					</li> 
+
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab"  ng-click="categories('buildings')">Buildings</a>
+					</li> 
+
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab"  ng-click="categories('fashion')">Fashion</a>
+					</li> 
+
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab"  ng-click="categories('landscape')">Landscape</a>
+					</li> 
+        
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab"  ng-click="categories('portrait')">Potrait</a>
+					</li> 
+        
+        <li class="grid_arch_category_list_element">
+					<a class="activeTab"  ng-click="categories('wedding')">Wedding</a>
+					</li> 
+        </ul>    
+      </div>
+
+<!--	 Displaying Images In grid style with different categories-->
+      <div class="grid_arch_wrapper">
+<!--				Filtering the images based on the categories-->
+    		<div class="grid_arch_img_div uk-animation-scale-up" ng-repeat="image in arrayOfImages" 
+         ng-if="category == image.imgCategory || category == showAllImages"> 
+      			<a ui-sref="search({searchText :image.imgCategory })">
+      				<img class="grid-arch-img" ng-src="{{ image.sourceAdd }}" alt="">
+							<div class="grid_arch_overlay">
+								<span class="grid_arch_title" ng-bind="image.imgTitle"></span> <br>
+								<span class="grid_arch_category" ng-bind="image.imgCategory"></span> <br>
+								<span class="grid_arch_count">4 photos</span>
+							</div> 
+					</a>
+				</div>
+    	</div>
+  
+<!--  Silding Away the Load More Button After Maximum Attempts-->
+  	<div  class=" grid_arch_loadMore {{ classAway }}">
+  		<a ng-click="gridLoadMore();" class="btn-gradient-primary">LOAD MORE <img src="img/right_arrow.png" class="btn-arrow"> </a>
+    </div>
+</div>
+<script src="js/startAtTop.js"></script>

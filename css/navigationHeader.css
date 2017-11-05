@@ -1,0 +1,137 @@
+
+@media only screen and (min-width: 1300px)  {
+    /* Laptop */
+    /*Swipebox*/
+    /*swipebox_video goes here*/
+
+    .navbarWrapper ul.menu > li {
+        margin: 0 0 0 56px;
+    }
+    .visiblebgimg {
+        height: 923px;
+    }
+    .leftImgOnbgimg {
+        left: 80px;
+        bottom: 105px;
+    }
+    #text {
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+    /* Ipad Land */
+
+    .navbarWrapper ul.menu > li {
+        margin: 0 0 0 30px;
+    }
+    .visiblebgimg {
+        height: 823px;
+    }
+    .leftImgOnbgimg {
+        bottom: 105px;
+        left: 80px;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+    .navbarWrapper ul.menu > li {
+        margin: 0 0 0 7px;
+    }
+    .visiblebgimg {
+        height: 723px;
+    }
+    .leftImgOnbgimg {
+        width: 500px;
+        height: 100px;
+        bottom: 135px;
+        left: 0px;
+    }
+    #text {
+        width: 280px;
+    }   
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    /* Ipad Portrait */
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .visiblebgimg {
+        height: 723px;
+    }
+    .leftImgOnbgimg {
+        width: 300px;
+        height: 30px;
+        bottom: 255px;
+        left: 20px;
+    }
+    #text {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 760px)  {
+    /*Iphone*/
+    #btn {
+        display: inline-block;
+    }
+    .headerTagLine {
+        display: none;
+    }
+    .visiblebgimg {
+        height: 723px;
+    }
+    .leftImgOnbgimg {
+        width: 150px;
+        height: 20px;
+        bottom: 255px;
+        left: 20px;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 760px) {
+    /*iPhone 6+*/
+    .headerTagLine {
+        display: none;
+    }
+    .visiblebgimg {
+        height: 723px;
+    }
+    .leftImgOnbgimg {
+        width: 200px;
+        height: 20px;
+        bottom: 255px;
+        left: 20px;
+    }
+}

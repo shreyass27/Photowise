@@ -1,0 +1,203 @@
+<div id="showCase" >
+<div class="main_page">
+ <div class="container">
+   <div class="ShowCaseWorks">
+     <div class="ShowCaseHeading" > <!-- The Main Heading -->
+        my photography works
+     </div>
+     <div class="ShowCaseDescription"> <!--Description of the photographer -->
+       <div class="description1">
+				 <p><span ng-bind="intro1"></span> <br> <span ng-bind="intro2"> </span></p>   
+       </div>
+     </div>
+    </div>
+     
+    <div class="row" > <!--The Spinning Numbers -->
+     <div><div class="spinningNumber-second" uk-scrollspy="cls:uk-animation-fade" >
+    <div class="container" id="check">
+    <div class="animated">
+    <div class ="wrapper">
+    <div class="row row-centered text-asm-centered">
+         
+     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-centered text-asm-centered">
+       <div class="bounceInLeft">
+         <div class = "people_icon_wrapper">
+           <img src="img/people.png" alt="Customers"  class="runningicons">
+           <div class = "counter stat_count" data-count="241">{{happyCustomers}}
+           </div>
+           <div class = "people_text">
+             happy customers
+           </div>
+         </div>
+
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-centered text-asm-centered">
+      <div class="bounceIn">
+        <div class = "heart_icon_wrapper">
+          <img src="img/heart.jpg" alt="Heart"  class="runningicons">
+          <div class = "counter stat_count" data-count="7946">{{followers}}
+          </div>
+          <div class = "heart_text">
+          followers
+          </div>
+        </div>
+      </div>
+     </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-centered text-asm-centered">
+     <div class="bounceIn">
+       <div class = "award_icon_wrapper">
+         <img src="img/award.png" alt="Awards"  class="runningicons">
+         <div class = "counter stat_count" data-count="35">{{awardsWinning}}
+         </div>
+         <div class = "award_text">
+          awards winning
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-centered  text-asm-centered">
+     <div class="bounceInRight">
+      <div class = "photo_icon_wrapper">
+        <img src="img/photos.png" alt="Photos"  class="runningicons">
+        <div class = "counter stat_count" data-count="8203">{{photosTaken}}
+        </div>
+        <div class = "photo_text">
+          photos taken
+        </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+</div>   
+</div>
+     </div>
+
+  <div class="ShowCaseImageDescription1" uk-scrollspy="cls:uk-animation-slide-bottom"> <!--The first pictures collection and the description -->
+   <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 ImageDescription1" >
+       <div id="carousel" class="carousel carousel-fade" data-interval="false">
+     <ol class="carousel-indicators">
+        <li  data-target="#carousel" data-slide-to="0" class="active" ></li>
+        <li  data-target="#carousel" data-slide-to="1"></li>
+        <li  data-target="#carousel" data-slide-to="2"></li>
+     </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+    
+     <div class="active item uk-animation-fade">
+      <img  ng-src="{{ showcaseImages[0].sourceAdd }}" class="showcaseSize" alt="Power of Nature" title="{{ showcaseImages[0].imgTitle}}" draggable="false"></div>
+      <div class="item uk-animation-fade">
+      <img  ng-src="{{ showcaseImages[1].sourceAdd }}" class="showcaseSize"  alt="Rock Circles" title="{{ showcaseImages[1].imgTitle}}" draggable="false"></div>
+      <div class="item uk-animation-fade">
+      <img  ng-src="{{ showcaseImages[2].sourceAdd }}" class="showcaseSize"  alt="Mountain Forest" title="{{ showcaseImages[2].imgTitle }}" draggable="false"></div>
+    </div>
+       </div>
+    
+  </div>
+        
+  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12  ImageDescription2">
+   <div class="ImageInnerDescription1">
+    landscape
+   </div><br>
+   <div class="ImageInnerDescription2">
+    <p ng-bind="landscape1">
+    </p>
+   </div>
+   <div class="ImageInnerDescription3">
+    <p ng-bind="landscape2"></p>
+   </div><br>
+    <div class="ImageInnerDescription4">
+     <div class="btn-gradient-learn"  >
+      <a  class="btn-gradient-primary1" ui-sref="search({searchText:'landscape' })">learn more <img src="img/right_arrow.png" class="btn-arrow1"> </a>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="ShowCaseImageDescription2" uk-scrollspy="cls:uk-animation-slide-bottom"><!--The second pictures collection and the description -->
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ImageDescription3">
+     <div class="ImageInnerDescription1">
+      portraits
+     </div><br>
+     <div class="ImageInnerDescription5">
+      <p ng-bind="portraits1"></p>
+     </div>
+     <div class="ImageInnerDescription6">
+      <p ng-bind="portraits2"></p>
+     </div><br>
+     <div class="ImageInnerDescription4">
+      <div class="btn-gradient-learn" >
+       <a  class="btn-gradient-primary1" ui-sref="search({searchText:'portraits'})">learn more <img src="img/right_arrow.png" class="btn-arrow1"> </a>
+      </div>
+     </div>
+    </div>
+
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 ImageDescription4" >
+     <div id="carousel1" class="carousel carousel-fade" data-interval="false">
+      <ol class="carousel-indicators">
+        <li  data-target="#carousel1" data-slide-to="0" class="active" ></li>
+        <li  data-target="#carousel1" data-slide-to="1"></li>
+        <li  data-target="#carousel1" data-slide-to="2"></li>
+      </ol>
+    <!-- Carousel items -->
+      <div class="carousel-inner">
+       <div class="active item uk-animation-fade">
+        <img  ng-src="{{ showcaseImages[3].sourceAdd }}" class="showcaseSize" alt="Blonde in the Dark" title="{{ showcaseImages[3].imgTitle}}" draggable="false"></div>
+        <div class="item uk-animation-fade">
+        <img  ng-src="{{ showcaseImages[4].sourceAdd }}"  class="showcaseSize" alt="Woman Face Portrait" title="{{ showcaseImages[4].imgTitle}}" draggable="false"></div>
+        <div class="item uk-animation-fade">
+        <img  ng-src="{{ showcaseImages[5].sourceAdd }}"  class="showcaseSize"  alt="Attractive Fashion" title="{{ showcaseImages[5].imgTitle }}" draggable="false"></div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="ShowCaseImageDescription3" uk-scrollspy="cls:uk-animation-slide-bottom"> <!--The third pictures collection and the description -->
+    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 ImageDescription5" >
+     <div id="carousel2" class="carousel carousel-fade" data-interval="false">
+      <ol class="carousel-indicators">
+        <li  data-target="#carousel2" data-slide-to="0" class="active" ></li>
+        <li  data-target="#carousel2" data-slide-to="1"></li>
+        <li  data-target="#carousel2" data-slide-to="2"></li>
+      </ol>
+    <!-- Carousel items -->
+     <div class="carousel-inner">
+      <div class="active item uk-animation-fade">
+        <img  ng-src="{{ showcaseImages[6].sourceAdd }}" class="showcaseSize"  alt="Chinese Kids" title="{{ showcaseImages[6].imgTitle}}" draggable="false"></div>
+        <div class="item uk-animation-fade">
+        <img  ng-src="{{ showcaseImages[7].sourceAdd }}"  class="showcaseSize" alt="Chinese Woman" title="{{ showcaseImages[7].imgTitle}}" draggable="false"></div>
+        <div class="item uk-animation-fade">
+        <img  ng-src="{{ showcaseImages[8].sourceAdd }}"  class="showcaseSize"  alt="Balea Lake" title="{{ showcaseImages[8].imgTitle }}" draggable="false"></div>
+      </div>
+     </div>
+    </div>
+        
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ImageDescription6">
+     <div class="ImageInnerDescription1">
+     commercial
+     </div><br>
+     <div class="ImageInnerDescription5">
+      <p ng-bind="commercial1"></p>
+     </div>
+     <div class="ImageInnerDescription6">
+      <p ng-bind="commercial2"></p>
+     </div><br>
+     <div class="ImageInnerDescription4">
+      <div class="btn-gradient-learn" >
+       <a  class="btn-gradient-primary1" ui-sref="search({searchText:'commercial' })">learn more <img src="img/right_arrow.png" class="btn-arrow1"> </a>
+      </div>
+     </div>
+     </div>
+    </div>
+   </div>
+  </div>
+</div>
+<div class="pre-footer"><pre-footer></pre-footer></div>
+<script src="js/startAtTop.js"></script>

@@ -1,0 +1,68 @@
+<div class="container" id="reviewWrap">
+  <div class="row" style="margin-bottom:0px">
+  <div class="col-md-6" style="border-bottom: 1px solid #111111;border-right: 1px solid #111111; padding-bottom:50px;">  
+      <div uk-scrollspy="cls:uk-animation-slide-left">
+    <div style="text-align: center;">
+      <img src="img/test1.jpg" class="img-circle" style="width:100px; height: 100px;">
+      <p class="testimonial-p">&#8220;<span ng-bind="reviewMsg1"></span>&#8221;</p>
+      <span class="testimonial-font">JAY STEPHENS</span>
+      
+</div>
+      </div>
+</div>
+
+  <div class="col-md-6" style="border-bottom: 1px solid #111111;padding-bottom:50px;">
+      <div uk-scrollspy="cls:uk-animation-slide-right">
+    <div style="text-align: center;">
+      <img src="img/test2.jpg" class="img-circle" style="width:100px; height: 100px;">
+  <p class="testimonial-p">&#8220;<span ng-bind="reviewMsg2"></span>&#8221;
+        </p>
+      <span class="testimonial-font">LUCILE MARSHALL</span>
+</div>
+      </div>
+</div>
+  </div>
+<div class="row">
+  <div class="col-md-6" style="border-right: 1px solid #111111; padding-top:50px;"> 
+            <div uk-scrollspy="cls:uk-animation-slide-left">
+
+    <div style="text-align: center;">
+      <img src="img/test3.jpg" class="img-circle" style="width:100px; height: 100px;">
+  <p class="testimonial-p">&#8220;<span ng-bind="reviewMsg1"></span>&#8221;</p>
+      <span class="testimonial-font">HELEN MORRIS</span>
+</div>
+      </div>
+</div>
+
+  <div class="col-md-6" style="padding-top: 50px;">  
+            <div uk-scrollspy="cls:uk-animation-slide-right">
+
+    <div style="text-align: center;">
+      <img src="img/test4.jpg" class="img-circle" style="width:100px; height: 100px;">
+  <p class="testimonial-p">&#8220;<span ng-bind="reviewMsg2"></span>&#8221;</p>
+      
+      <span class="testimonial-font">BOBBY MURRAY</span>
+</div>
+      </div>
+</div>
+</div>
+</div>
+          <div uk-scrollspy="cls:uk-animation-slide-bottom">
+    <div style="padding:50px 0px 30px 0px ;">
+  <div style="text-align: center;">
+  <a ui-sref="showcase" class="btn-gradient-primary" >SEE MORE <img src="img/right_arrow.png" class="btn-arrow"> </a>
+</div>
+  </div>
+    </div>
+<div>
+<div style="postion:relative;overflow:hidden;margin:80px 0px 40px 0px" uk-scrollspy="cls:uk-animation-fade">
+ <div  ng-repeat=" pic in imgSrc" class="home-row-img-fig1" >
+   <a class="home-row-img-a" href="https://www.flickr.com/">         
+    <img class="home-row-img" ng-src="{{pic.sourceAdd}}"/> 
+      <div class="home-row-img-overlay"></div>    
+       <div class="home-row-img-details home-row-img-hvr-float ">
+         <div class="home-row-img-title" ng-bind="pic.imgTitle"></div>       
+          <div class="home-row-img-date1" ng-bind="getDate[$index]"></div>
+       </div>    
+     </a>
+	</div></div></div>

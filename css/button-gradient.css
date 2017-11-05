@@ -1,0 +1,78 @@
+button:focus {
+    outline: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    cursor: default;
+    border-color: gray;
+    background-color: gray;
+}
+
+.btn-gradient-primary {
+    font: 12px 'Poppins', sans-serif;
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid deeppink;
+    padding: 13px 31px;
+    background-color: #000000;
+}
+
+.btn-gradient-primary:hover {
+    background: -moz-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    background: -webkit-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    background: -ms-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    cursor: pointer;
+    color: white;  
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.btn-gradient-primary:focus {
+    color: white;  
+    text-decoration: none;
+}
+
+.btn-gradient-secondary {
+    font: 12px 'Poppins', sans-serif;
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 16px 48px;
+    border: 1px solid deeppink;
+    background: -webkit-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    background: -o-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    background: -moz-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    background: -ms-linear-gradient(left, deeppink 25%, #dd33ff 100%);
+    background: linear-gradient(left, deeppink 25%, #dd33ff 100%);
+}
+
+.btn-gradient-secondary:hover {
+    background : #000000;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-gradient-secondary:focus {
+    color: white;  
+    text-decoration: none;
+}
+
+.btn-arrow {
+    height: 13px;
+    width: 23px;
+    padding-bottom: 3px;
+}
+
+.divideline {
+    width: 1px;
+    height: 100px;
+    background-color: #FFFFFF;
+    -ms-transform: translate(50vw, -50px);
+    -webkit-transform: translate(50vw, -50px);
+    transform: translate(50vw, -50px);
+}

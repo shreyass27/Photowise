@@ -1,0 +1,151 @@
+
+@media only screen and (min-width: 1320px)  {
+    .imgContainer {
+        text-align: center;
+        vertical-align: center;
+        padding: 0px;
+        margin: 15px;
+        width: 31%;
+        height:31vw;
+    } 
+
+    .preFooterImg {
+        width: 10%;
+        height: 10%;
+        float: left;
+    }    
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1320px) {
+    .imgContainer {
+        text-align: center;
+        vertical-align: center;
+        padding: 0px;
+        margin: 15px;
+        width: 30%;
+        height: 30vh;
+    }     
+    .preFooterImg {
+        width: 10%;
+        height: 10%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+    .imgContainer {
+        text-align: center;
+        vertical-align: center;
+        padding: 0px;
+        margin: 15px;
+        width: 30%;
+        height: 30vh;
+    }  
+    .preFooterImg {
+        width: 10%;
+        height: 10%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 770px) and (max-width: 960px) {
+    .imgContainer {
+        text-align: center;
+        vertical-align: center;
+        padding: 0px;
+        margin: 15px;
+        width: 29%;
+        height: 29vh;
+    } 
+    .preFooterImg {
+        width: 10%;
+        height: 10%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 770px) and (min-width:478px) {
+    .imgContainer {
+        text-align: center;
+        vertical-align: center;
+        padding: 0px;
+        margin: 15px;
+    }
+    .preFooterImg {
+        width: 10%;
+        height: 10%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    .imgContainer {
+        text-align: center;
+        vertical-align: center;
+        padding: 0px;
+        margin: 15px;
+    }
+}
+
+.preFooterImg:hover {
+    opacity: 0.8;
+}
+
+.prefooterContainer {
+    padding: 0px;
+    margin: 0px;
+    width: 100%; 
+}
+
+.containerWrapper {
+    padding: 15px;
+    width: 100%;
+}
+
+.gridRow {
+    overflow: hidden;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.imgContainer .gridImg {
+    overflow: hidden;
+}
+
+.gridImg {
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.loader {
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top: 3px solid gray;
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.prevBtn {
+    margin: 40px 0;
+    padding: 15px 50px;
+}
+
+.nextBtn {
+    margin: 40px 30px 40px 6vw;
+    padding: 15px 50px;
+}

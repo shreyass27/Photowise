@@ -1,0 +1,42 @@
+  <div class="container" id="responsiveWrap">
+    <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+			
+			<div class="col-sm-10 col-md-10" style="padding:50px 0px 50px 0px;">  
+      	<div uk-scrollspy="cls:uk-animation-slide-bottom">
+    			<div style="text-align: center;">
+      			<span class="above-para-font">SELECTED WORK</span>
+  						<p class="para-font" style="padding:40px 0px 10px 0px;"><span ng-bind="selectedWork"></span></p>
+					</div>
+      	</div>
+			</div>
+        
+			<div class="col-sm-1 col-md-1"></div>
+		</div>
+	</div>
+
+<div>
+<div style="position:relative;overflow:hidden;" >
+		<div ng-repeat="image in arrayOfImages track by $index" class="{{ 'imageHomeGrid' + ($index +1)}}" ng-click="openmyModal();currentSlide($index+1)" uk-scrollspy="cls:uk-animation-fade">
+			 <a> <img ng-src="{{ image.sourceAdd }}" class="homeGridImg"/>  
+				 <div class="overlay">
+					 <div class="homeGridplus"><img src="img/round-add-button.png" class="homeGridImagePlus" >
+					 </div>
+				 </div>   
+			</a>
+		</div> 
+</div>
+
+<div id="myModal" class="myModal">
+	<span class="close cursor" ng-click="closemyModal()">&times;</span>
+		<div class="myModal-content">
+			<div ng-repeat="image in arrayOfImages track by $index" class="mySlides demo" id="play">
+				<img ng-src="{{ image.sourceAdd }}" class="imageCarousel">
+					<div class="imageCarouselTextLeft" ng-bind="image.imgTitle"></div>
+					<div class="imageCarouselTextRight"> <span ng-bind="$index+1"></span> / 8</div>
+				</div>
+				<a class="prev" style="left:05%" ng-click="plusSlides(-1)">&#10094;</a>
+        <a class="next" ng-click="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+</div>
